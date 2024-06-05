@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Codecademy: Light Mode
 // @namespace    https://github.com/cybenv
-// @version      0.4
+// @version      0.6
 // @description  Codecademy Enhanced Light Theme with Customizations
 // @author       Seva
 // @match        https://www.codecademy.com/*
@@ -12,32 +12,84 @@
     'use strict';
 
     const css = `
-        .gamut-1mv8uod:not(.gamut-1ag67m1-FlexBox):not(.gamut-1ag67m1-FlexBox *):not(.gamut-80zlcx-Box):not(.gamut-80zlcx-Box *) {
-            background-color: #FFF1E6;
+        header.gamut-7fo7a4-Box {
+            background-color: #fffcf9;
+            border-bottom: 0.9px solid black;
+        }
+ 
+        header.gamut-7fo7a4-Box * {
+            color: #3d3a39;
         }
 
+        header.gamut-7fo7a4-Box :hover {
+        color: #ff8668;
+        }
+
+        div.styles_footer__uX91v {
+            background-color: #fffcf9;
+        }
+
+        footer {
+            background-color: #fffcf9;
+            border-top: 0.9px solid black;
+        }
+
+        .gamut-1541y8v-ResetElementAnchor-createButtonComponent, 
+        button#discovery-next, button#discovery-back {
+            color: #3d3a39;
+        }
+
+        button#discovery-next {
+            background-color: #ff8668;
+            border-color: #ff8668;
+        }
+
+        button#discovery-back {
+            border-color: #ff8668;
+        }
+
+        .styles_sectionRight__sgWaF .gamut-1541y8v-ResetElementAnchor-createButtonComponent {
+            background-color: #ff8668;
+            border: #ff8668;
+            color: #3d3a39;
+        }
+
+        .styles_sectionRight__sgWaF a.gamut-1541y8v-ResetElementAnchor-createButtonComponent {
+            color: #3d3a39;
+            background-color: #ff8668;
+        }
+        /* Main страницы */
+        .gamut-1mv8uod :not(.gamut-1ag67m1-FlexBox):not(.gamut-1ag67m1-FlexBox *):not(.gamut-80zlcx-Box):not(.gamut-80zlcx-Box *) {
+            background-color: #FFF1E6;
+        }
+        /* Контент окно курса */
         .gamut-1ag67m1-FlexBox {
-            background-color: #F5FCFF;
-            border: 1px solid black;
+            background-color: #fffef9;
+            border: 0.9px solid black;
             padding: 35px;
             position: relative;
             overflow: visible;
             box-shadow: -10px 15px 0px 0px rgba(0, 0, 0, 0.15);
         }
-      
-        .gamut-93stl9-Box,
-        .gamut-93stl9-Box * {
-            color: black;
+
+        h1.gamut-oqq5yh-StyledText, 
+        span.styles_markdown__Y5HHD {
+            color: #3d3a39;
         }
 
-        div.gamut-80zlcx-Box,
+        .gamut-93stl9-Box, 
+        .gamut-93stl9-Box * {
+            color: #2a2a29;
+        }
+
+        div.gamut-80zlcx-Box, 
         div.gamut-80zlcx-Box *:not(.gamut-1gjic71-BadgeBase):not(.gamut-1gjic71-BadgeBase *) {
-            background-color: #FFFFFF;
+            background-color: #fffef9;
         }
 
         div.gamut-80zlcx-Box {
-            border: 1px solid black;
-            color: black;
+            border: 0.9px solid black;
+            color: #2a2a29;
         }
 
         .styles_p__TNq46 > code.styles_code__L5_fh {
@@ -45,8 +97,12 @@
             padding: 0.02em 0.4em;
             margin: 0;
             font-size: 75%;
-            color: black;
-            background-color: #C3E8FF;
+            color: #2a2a29;
+            background-color: #dfd6f1;
+        }
+
+        div * > a.gamut-d5kubd-AnchorBase {
+            color: #444fb2;
         }
     `;
 
