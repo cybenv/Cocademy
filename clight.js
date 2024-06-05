@@ -20,23 +20,48 @@
         }
 
         .gamut-gi2olp-AnchorBase {
-            color: black; /* Цвет 'My Home' */
+            color: black; /* Цвет текста 'My Home' */
         }
 
         .gamut-aqft1r-ResetElement-AnchorBase {
-            color: black; /* Цвет 'Syllabus' */
+            color: black; /* Цвет текста 'Syllabus' */
         }
 
         .gamut-11n1gpx-ResetElement-AnchorBase {
-            color: black; /* Цвет 'Get Unstuck' */
+            color: black; /* Цвет текста 'Get Unstuck' */
         }
 
         .gamut-1cgj4ay-ResetElement-AnchorBase {
-            color: black; /* Цвет 'Tools' */
+            color: black; /* Цвет текста 'Tools' */
         }
 
         .gamut-7fo7a4-Box :hover {
-            color: #ff8668; /* Цвет при наведении */
+            color: #ff8668; /* Цвет текста при наведении */
+        }
+
+        /* Нижняя панель */
+
+        div.styles_footer__uX91v {
+            background-color: #FFFFFF; /* Цвет фона нижней панели */
+        }
+
+        button#discovery-back {
+            color: #ff8668; /* Цвет текста кнопки 'Back' */
+            border-color: #ff8668; /* Цвет обводки кнопки 'Back' */
+        }
+
+        button#discovery-back:active {
+            background-color: #ff8650; /* Цвет кнопки 'Back' при нажатии */
+        }
+
+        button#discovery-next {
+            color: #fff; /* Цвет текста кнопки 'Back' */
+            border-color: #ff8668; /* Цвет обводки кнопки 'Back' */
+            background-color: #ff8668; /* Цвет кнопки 'Next' при нажатии */
+        }
+
+        button#discovery-back :hover {
+            background-color: #ff8668; /* Цвет кнопки 'Back' при нажатии */
         }
     `;
 
